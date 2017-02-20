@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>$message.get($params.action) $message.get($params.entity)</title>
+    <link rel="stylesheet" media="screen" href="/css/market/index.css" >
+    
+    <!–[if IE]>
+		<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    <![endif]–>
+</head>
+<body style="background-color:#EBEBEB">
+	<div class="BoxGeneral">
+		<form class="contact_form" action="../update/$params.instance.value.id" method="post">
+			#parse("/view/Usuario/_form.html")
+		</form>
+	</div>
+</body>
+</html>
